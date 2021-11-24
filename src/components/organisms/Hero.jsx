@@ -12,7 +12,7 @@ const Hero = () => {
         {/*a width vai ser a responsável pelo alinamento da div de texto*/}
         <Box p={["4","5","6","7","8"]}  w={["100%","100%","100%","100%","75%"]} m="auto">
             <Heading color="#009300" as="h1" mb="24px">
-            Mediacom Internet, TV & Phone Services 
+            Get faster connection with Ziply Fiber
             </Heading>
             <List color="#000000"spacing={2}>
                 <ListItem>
