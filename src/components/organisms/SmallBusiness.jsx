@@ -3,38 +3,48 @@ import { Box, SimpleGrid, Heading, Text, Flex, List, ListIcon, ListItem } from '
 import CallNowPhoneBt from '../atoms/CallNowPhoneBt'
 import { CheckIcon } from '@chakra-ui/icons'
 
-const Plans = () => {
+const SmallBusiness = () => {
     return (
 <>
 <Box align="center" bgColor="#fff" p={{base:"10", md:"0 10 "}}>
-    <Heading mb="10">Ziply Fiber: Speeds that will knock your socks off</Heading>
+    <Heading mb="10">Small Business: Get the job done with reliable, fast and affordable internet</Heading>
 
-    <Flex mb="30px" maxW="1250px" rounded="md" boxShadow="2xl" bgColor="#F1F1F1" align="center" direction="column" >
+    <SimpleGrid columns={{base:"1", md:"2"}} pb="30px" spacing={10} maxW="1250px">
+    <Flex rounded="md" boxShadow="2xl" bgColor="#F1F1F1" align="center" direction="column" >
       <List p="6" textAlign="start" color="#000000" spacing={1}>
                 <ListItem>
                     <ListIcon as={CheckIcon}  />
-                    Unlimited data and no annual contract 
+                    No annual contracts 
                 </ListItem>
                 <ListItem>
                     <ListIcon as={CheckIcon}  />
-                    25x faster upload speeds than cable with Fiber Gig 
+                    Everyday low pricing
+                </ListItem>
+      </List>
+      </Flex>
+      <Flex rounded="md" boxShadow="2xl" bgColor="#F1F1F1" align="center" direction="column" >
+      <List p="6" textAlign="start" color="#000000" spacing={1}>
+                <ListItem>
+                    <ListIcon as={CheckIcon}  />
+                    Unlimited data
                 </ListItem>
                 <ListItem>
                     <ListIcon as={CheckIcon}  />
-                    30-day moneyback guarantee
+                    Run eCommerce or VOIP
                 </ListItem>
       </List>
       </Flex>
 
+    </SimpleGrid>
 
   <SimpleGrid columns={{base:"1", md:"3"}} spacing={10} maxW="1250px">
     <Flex rounded="md" boxShadow="2xl" bgColor="#F1F1F1" align="center" direction="column" >
       <Box bgColor="#000050" color="#fff" w="100%" mb="" p="5">
-        <Heading pb="10px" as="h3" fontSize="2xl">Access Internet 60</Heading>
+        <Heading pb="10px" as="h3" fontSize="2xl">Ziply Fiber 500/500</Heading>
 
         <Flex align="start" color="#fff" justify="center" direction="row" fontWeight="700">
           <Box fontSize="29px" mt="7px" >$</Box>
-          <Box fontSize="94px" mt="-25px">60</Box>
+          <Box fontSize="94px" mt="-25px">100</Box>
           <Box direction="column">
               <Box fontSize="43px" textAlign="start" mb="-18px" >00</Box><Box fontSize="21px" textAlign="start" mb="-5px" >/mo.</Box>
           </Box>
@@ -44,7 +54,7 @@ const Plans = () => {
       <List pb="6" textAlign="start" color="#000000" spacing={1}>
                 <ListItem>
                     <ListIcon as={CheckIcon}  />
-                    Gig Speed with 25x Faster Uploads than Cable 
+                    Super-fast Fiber speed upload & download 
                 </ListItem>
             </List>
       <CallNowPhoneBt/>
@@ -53,11 +63,11 @@ const Plans = () => {
     
     <Flex rounded="md" boxShadow="2xl" bgColor="#F1F1F1" align="center" direction="column" >
       <Box bgColor="#000050" color="#fff" w="100%" mb="" p="5">
-        <Heading pb="10px" as="h3" fontSize="2xl">Ziply Fiber 200/200</Heading>
+        <Heading pb="10px" as="h3" fontSize="2xl">Ziply Fiber 100/100</Heading>
 
         <Flex align="start" color="#fff" justify="center" direction="row" fontWeight="700">
           <Box fontSize="29px" mt="7px" >$</Box>
-          <Box fontSize="94px" mt="-25px">40</Box>
+          <Box fontSize="94px" mt="-25px">50</Box>
           <Box direction="column">
               <Box fontSize="43px" textAlign="start" mb="-18px" >00</Box><Box fontSize="21px" textAlign="start" mb="-5px" >/mo.</Box>
           </Box>
@@ -67,7 +77,7 @@ const Plans = () => {
       <List pb="6" textAlign="start" color="#000000" spacing={1}>
                 <ListItem>
                     <ListIcon as={CheckIcon}  />
-                    Fast Speeds up to 200 Mbps Upload & Download 
+                    Fast speeds up to 100 Mbps upload & download 
                 </ListItem>
             </List>
       <CallNowPhoneBt/>
@@ -76,11 +86,11 @@ const Plans = () => {
 
     <Flex rounded="md" boxShadow="2xl" bgColor="#F1F1F1" align="center" direction="column" >
       <Box bgColor="#000050" color="#fff" w="100%" mb="" p="5">
-        <Heading pb="10px" as="h3" fontSize="2xl">Ziply Fiber 50/50</Heading>
+        <Heading pb="10px" as="h3" fontSize="2xl">Ziply Internet</Heading>
 
         <Flex align="start" color="#fff" justify="center" direction="row" fontWeight="700">
           <Box fontSize="29px" mt="7px" >$</Box>
-          <Box fontSize="94px" mt="-25px">20</Box>
+          <Box fontSize="94px" mt="-25px">50</Box>
           <Box direction="column">
               <Box fontSize="43px" textAlign="start" mb="-18px" >00</Box><Box fontSize="21px" textAlign="start" mb="-5px" >/mo.</Box>
           </Box>
@@ -90,7 +100,7 @@ const Plans = () => {
       <List pb="6" textAlign="start" color="#000000" spacing={1}>
                 <ListItem>
                     <ListIcon as={CheckIcon}  />
-                    Reliable Speed up to 50 Mbps Upload & Download 
+                    Variable download speeds 
                 </ListItem>
             </List>
       <CallNowPhoneBt/>
@@ -102,6 +112,4 @@ const Plans = () => {
 </>
     )}
 
-
-
-export default Plans
+export default SmallBusiness
