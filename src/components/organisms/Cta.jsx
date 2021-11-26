@@ -9,7 +9,7 @@ const Cta = () => {
         <Flex maxW="1272px" align="center" direction={{base: "column", md: "row"}} >
             <Box pb={{base:5, md:0}}>
             <Text fontWeight="700" fontSize="2xl" >
-            Find Mediacom Deals In Your Area:
+            Find ZiplyFiber Deals In Your Area:
             </Text>
             </Box>
             <Spacer/>
